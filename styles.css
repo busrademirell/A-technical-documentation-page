@@ -1,0 +1,50 @@
+/* Asağıdaki koşul sağlandığında çalışır */
+@media (max-width: 10px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  position: fixed; /* Sidebarı sabit tutuyor */
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+  overflow-y: auto; /* İçerik uzun olursa kaydırma */
+  background-color: #f4f4f4;
+}
+.sidebar-header {
+  position: sticky; /* Sabit durması için */
+  top: 0; /* Sayfanın en üst kısmına sabitle */
+  padding: 20px 20px; /* İç boşluk */
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd; /* Alt çizgi */
+  z-index: 10; /* Üstte görünmesini sağlamak için */
+  background-color: #f4f4f4;
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background 0.3s ease;
+}
+
+main {
+  margin-left: 280px; /* Sidebar genişliği + boşluk */
+  padding: 20px;
+}
+.code {
+  background-color: #dddd;
+  padding: 20px;
+}
+
+header {
+  font-size: 30px;
+}

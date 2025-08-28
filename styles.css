@@ -1,50 +1,103 @@
-/* It works when the following condition is met */
-@media (max-width: 10px) {
-  body {
-    background-color: lightblue;
-  }
+:root {
+  --color-f4: #f4f4f4;
+  --color-lightblue: lightblue;
+  --color-black: black;
+  --color-gray: rgb(77, 78, 83);
+  --color-code: #dddddd;
 }
 
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
 .sidebar {
   width: 280px;
   height: 100vh;
-  position: fixed; /* Sidebar remains fixed */
+  position: fixed;
   top: 0;
   left: 0;
   padding: 20px 0;
   overflow-y: auto; /* Scroll if the content is long */
-  background-color: #f4f4f4;
+  background-color: var(--color-f4);
+  padding-top: 80px;
+  padding-bottom: 20px;
 }
-.sidebar-header {
-  position: sticky; /* To stay steady*/
+
+.sidebar header {
+  position: fixed; /* To stay steady */
   top: 0;
-  padding: 20px 20px;
+  left: 0;
+  padding: 20px;
   font-size: 20px;
   text-align: center;
   border-bottom: 1px solid #ddd;
-  z-index: 10; /* To make it appear on top */
-  background-color: #f4f4f4;
+  background-color: var(--color-f4);
+  width: 280px;
+  box-sizing: border-box;
 }
 
 .sidebar a {
   display: block;
   text-decoration: none;
-  color: black;
+  color: var(--color-black);
   padding: 8px 20px;
   border-radius: 5px;
   margin-bottom: 10px;
-  transition: background 0.3s ease;
 }
 
+.sidebar a:hover {
+  background-color: var(--color-lightblue);
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  padding-bottom: 100px;
+}
+/* Main content */
 main {
-  margin-left: 280px; /* Sidebar width + space */
-  padding: 20px;
-}
-.code {
-  background-color: #dddd;
+  margin-left: 280px; /* Sidebar width */
   padding: 20px;
 }
 
-header {
+.main-section header {
   font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 600;
+}
+.main-section p {
+  color: var(--color-gray);
+}
+
+/* Code blocks */
+pre {
+  background-color: var(--color-code);
+  padding: 15px;
+  overflow-x: auto;
+}
+
+code {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    top: 0;
+  }
+  .sidebar header {
+    position: static;
+    width: 100%;
+  }
+  main {
+    margin-left: 0;
+  }
 }

@@ -3,7 +3,8 @@
   --color-lightblue: lightblue;
   --color-black: black;
   --color-gray: rgb(77, 78, 83);
-  --color-code: #dddddd;
+  --color-code: #eb5757;
+  --color-pre: rgb(247, 246, 243);
 }
 
 body {
@@ -59,7 +60,7 @@ body {
   margin: 0;
   padding-bottom: 100px;
 }
-/* Main content */
+
 main {
   margin-left: 280px; /* Sidebar width */
   padding: 20px;
@@ -76,15 +77,17 @@ main {
   color: var(--color-gray);
 }
 
-/* Code blocks */
 pre {
-  background-color: var(--color-code);
-  padding: 15px;
+  color: var(--color-code);
+  padding: px;
   overflow-x: auto;
+  display: inline-block; /* expands only according to content */
+  vertical-align: middle;
 }
 
 code {
-  display: block;
+  display: inline-block;
+  background-color: var(--color-pre);
 }
 
 @media (max-width: 768px) {

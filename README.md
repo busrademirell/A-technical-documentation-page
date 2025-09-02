@@ -1,13 +1,13 @@
 <p align="center">
-  <a href="https://github.com/busrademirell/CSS-documentation-page/blob/master/README.md">
+  <a href="https://github.com/busrademirell/css-documentation-page/blob/master/README.md">
     <img alt="downloads" src="https://img.shields.io/badge/English-En-blue" target="_blank" />
   </a>
-  <a href="https://github.com/busrademirell/CSS-documentation-page/blob/master/doc/tr/Readme_tr.md">
+  <a href="https://github.com/busrademirell/css-documentation-page/blob/master/doc/tr/README_tr.md">
     <img alt="License: MIT" src="https://img.shields.io/badge/Turkish-Tr-red" target="_blank" />
   </a>
 </p>
 
-# Freecodecamp Build a Technical Documentation Page Project
+# CSS Documentation Page Project
 
 ---
 
@@ -20,8 +20,8 @@ This project is a Technical Documentation Page created as part of freeCodeCamp's
 ## 🛠 Technologies Used
 
 - HTML5 → Used to create the structural layout of the page.
+
 - CSS3 → Applied for design, typography, and responsive layout.
-- Responsive Design → Ensured compatibility across mobile, tablet, and desktop devices.
 
 ---
 
@@ -64,4 +64,4 @@ This project is a Technical Documentation Page created as part of freeCodeCamp's
 
 ## 📷 Screenshot
 
-![CSS-doc](.gif)
+![CSS-doc](css-page.gif)

@@ -1,8 +1,8 @@
  <p align="center">
-  <a href="https://github.com/busrademirell/technical-documentation-page/blob/master/README.md">
+  <a href="https://github.com/busrademirell/CSS-documentation-page/blob/master/README.md">
     <img alt="downloads" src="https://img.shields.io/badge/English-En-blue" target="_blank" />
   </a>
-  <a href="https://github.com/busrademirell/technical-documentation-page/blob/master/doc/tr/Readme_tr.md">
+  <a href="https://github.com/busrademirell/CSS-documentation-page/blob/master/doc/tr/Readme_tr.md">
     <img alt="License: MIT" src="https://img.shields.io/badge/Turkish-Tr-red" target="_blank" />
   </a>
 </p>
@@ -23,8 +23,6 @@ Bu proje, freeCodeCamp'in ["Build a Technical Documentation Page"](https://techn
 
 - CSS3 → Tasarım, tipografi ve responsive düzen oluşturmak için uygulandı.
 
-- Responsive Design → Mobil, tablet ve masaüstü cihazlarda uyumlu görünüm sağlandı.
-
 ---
 
 ## 📚 Öğrendiklerim
@@ -38,14 +36,34 @@ Bu proje, freeCodeCamp'in ["Build a Technical Documentation Page"](https://techn
   3- Font, CSS dosyasında font-family özelliğiyle uygulanır:
   body { font-family: 'Inter', sans-serif; }
 
-- pre code etiketi
+- **pre (Preformatted Text) ->** Açılımı: preformatted text yani “önceden formatlanmış metin”.
+  İçine yazılan metin tam olarak yazıldığı gibi ekranda görünür; boşluklar, tablar ve satır atlamaları korunur. Genellikle kod blokları veya biçimlendirilmiş metin göstermek için tercih edilir.
 
-- transition: background 0.3s ease;
+- **code (Code Text) ->** Açılımı: code yani “kod metni”. İçine yazılan metin kod olduğunu belirtir, ama tek başına code satır atlamalarını veya boşlukları korumaz. Genellikle inline (satır içi) kod göstermek için kullanılır.
 
-- scroll bar
+_pre ile code birlikte kullanıldığında hem kod bloğu formatı korunur, hem de kod olduğunun vurgusu yapılır._
+
+- **CSS transition kullanımı →**
+
+  - transition özelliği, bir CSS özelliğinin değişimini ani değil, belirlenen süre ve hız eğrisine göre uygulamaktır.
+  - background → Geçişin uygulanacağı CSS özelliği.
+  - 0.3s → geçişin süresi (0.3 saniye).
+    ease → animasyonun hız eğrisi, yani başlangıç ve bitişin yumuşak olması.
+
+  _bir kapıyı hızlıca açmak yerine menteşenin hafif bir dirençle kapıyı yavaşça açması gibi düşünülebilir. transition, CSS’deki özellik değişiminin ani değil, akıcı ve doğal bir şekilde gerçekleşmesini sağlar._
+
+- **Scroll bar özelleştirme →**
+  CSS ile `::-webkit-scrollbar`, `::-webkit-scrollbar-track` ve `::-webkit-scrollbar-thumb` seçicileri kullanılarak kaydırma çubukları özelleştirilebilir. Bu sayede tasarıma uygun renkler, yuvarlatılmış kenarlar ve daha modern bir görünüm elde edilir.
+
+  - `::-webkit-scrollbar` → Scrollbar genel alanı.
+  - `::-webkit-scrollbar-track` → Kaydırma yolunun arka planı.
+  - `::-webkit-scrollbar-thumb` → Kaydırıcının kendisi.
+
+- **vertical-align →**
+  Paragraf içinde code etiketi kullanıldığında, kod metni bazen satırdaki diğer metinlere göre hafif aşağıda ya da yukarıda kalabilir. vertical-align: middle; kullanarak kodu metnin ortasına hizalayabiliriz.
 
 ---
 
 ## 📷 Ekran Görüntüsü
 
-![technical-documentation-page](.gif)
+![CSS-documentation-page](.gif)
